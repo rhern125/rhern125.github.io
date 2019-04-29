@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 300; color: #000000; margin: 0; padding: 0; }
+
+#page {max-width: 1440px; margin: 0 auto; position: relative;}
+
+a.btn {font-size: 1.2em; text-decoration: none; color: #000e8c; background-color: #9cea39; padding: 6px 6px;  transition: background-color .5s; margin: 0px auto; font-weight: 400;} 
+
+a.btn.reviews {font-size: 1.2em; text-decoration: none; color: #ece42d; background-color: #000e8c; padding:6px 6px;  transition: background-color .5s; margin: 0px auto;} 
+
+a.btn.reviews:hover {background-color: rgba(236,228,45,1.00); color: #000e8c;}
+
+
+
+/* Text */
+
+h2 {
+	margin: 0 0 .5em 0; 
+	font-size: 1.6em; 
+	font-weight:700; 
+	line-height: 1.1em;
+	padding: 13px 10px; }
+
+h3 {
+	margin: 0 0 .5em 0; 
+	font-size: 1.3em; 
+	font-weight:700; 
+	padding: 13px 10px;
+	text-decoration: none;}
+
+h4 {
+	margin: 0 0 1.5em 0; 
+	font-size: 1em; 
+	font-weight:700;
+	padding: 13px 10px;}
+
+p {margin: 0 0  1em 0; }
+
+a {color: #000e8c; text-decoration: none; }
+a:visited {color: #000000;}
+
+/*Header*/
+
+section.head a.logo { 
+	z-index: 1; 
+	position: absolute; 
+	display: block; 
+	width: 241px; 
+	height: 136px; 
+	background: url(../images/logo.svg) no-repeat 0 0; 
+	background-size: contain; 
+	top: 0px; 
+	left: 20px;
+	padding: 20px;}
+
+section.head a.logo span {
+	display: none; }
+
+/*Page Directory*/
+
+div.directory {
+	padding: 5px;
+	margin: 5px;
+	width: 25%;
+	position: absolute;
+	top: 175px;}
+
+
+/*Portfolio Images*/ /* fix the way the pictures are seperating within each column */
+
+section.images {
+	width:75%;
+	padding-top: 275px;}
+
+div.row {
+	display: flex; 
+	flex-wrap: wrap;
+	padding: 0 4px;}
+
+div.column {
+	flex: 50%; 
+	padding: 0 4px;}
+
+div.column img {
+	margin-top: 5px;
+	vertical-align: middle;
+	height: auto;
+	width: 470px;}
+
+a.btn.pics {
+	font-size: 1.2em; 
+	text-decoration: none; 
+	color: #000e8c; 
+	background-color: #ece42d; 
+	padding: 6px 6px;  
+	transition: background-color .5s; 
+	margin: 25px auto;
+	position: absolute; 
+	left: 425px;} 
+
+a.btn.pics:hover {
+	background-color: rgba(0,14,140,1.00); 
+	color: #ece42d; }
+
+
+/*User Profile*/
+
+
+div.profile {
+	position: absolute; 
+	right: 0px;
+	width: 25%;
+	top: 250px;}
+
+div.basics h3 {
+	padding: 5px; 
+	margin: 5px; 
+	text-align: center;}
+
+div.juan img {
+	padding-left: 50px;}
+
+div.basics p {
+	text-align: center;}
+
+div.info h4 {
+	padding: 0px; 
+	margin: 0px; 
+	text-align: left;
+	color: #000e83;} 
+
+div.info p {text-align: right;} 
+
+div img {padding-right: 5px;}
+
+div.bio h4 {
+	padding: 0px 0px 10px 0px; 
+	margin: 0px; 
+	text-align: left;
+	color: #000e83;} 
+
+div.bio p {text-align: left;} 
+
+
+
+/*Reviews*/
+
+div.reviews {
+	position: absolute;
+	right: 0px;
+	width: 25%;
+	bottom: 600px;}
+
+div.reviews h4 {
+	padding: 0px 0px 10px 0px; 
+	margin: 0px; 
+	text-align: left;
+	color: #000e83;}
+
+
+
+
+
+/* Navigation */
+
+nav {
+	background-color: rgba(0,0,0,0.70);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 115px 0px 0px 0px;
+	width: 100%;}
+
+nav::after {
+	content:''; 
+	display: block; 
+	clear: both;}
+
+nav ul {
+	list-style: none; 
+	margin: 0px 0px; 
+	padding: 0px;}
+
+nav ul li h4 {
+	color: #8cd233; 
+	padding: 0px; 
+	margin: 0px; 
+	text-decoration: none;  
+	width: 100%;
+	text-align: center;}  
+
+nav ul li:hover {
+	background-color: #ECE42D;}
+ 
+nav ul li:hover > ul {
+	display:block;}
+ 
+nav ul li a { 
+	display: inline-block; 
+	color: #8cd233; 
+	padding: 10px 20px; 
+	text-decoration: none; 
+	width: 150px; 
+	position: relative;}
+
+nav ul li a:visited { 
+	color: #ece42d; }
+
+nav ul li a:hover { 
+	background-color: #000e8c;}
+ 
+nav ul ul {
+	position: absolute; 
+	top: 100%; 
+	background-color: #000000; 
+	display: none; }
+ 
+nav ul ul li {
+	position: relative; }
+
+
+/* Main Top Navigation */
+
+ 
+nav div.top.nav > ul {
+	padding-left: 450px; }
+
+nav div.top.nav > ul > li {
+	float: left;}
+
+nav > ul > li > a {
+	width: auto; 
+	padding: 10px 20px 15px 20px;}
+
+/*adjust the -top- to text*/
+nav a[aria-haspopup="true"]::after {
+	content: ''; 
+	display: block; 
+	width: 0px 0px; 
+	position: absolute; 
+	top: 19px; 
+	right: 15px; 
+	border-top: 5px solid #8cd233; 
+	border-left: 5px solid transparent; 
+	border-right: 5px solid transparent; }
+
+ 
+
+
+
+/* Navigation Buttons */
+
+div.buttons {
+	position: absolute;
+	right: 10px;
+	top: 30px;}
+
+a.btn.log {
+	margin: 0px 5px;}
+
+a.btn.sign {
+	margin: 0px 5px;} 
+
+
+/*Footer*/
+
+section.footer {
+	background-color: #000000; 
+	color: #fff; 
+	width: 100%; 
+	height: 400px;}
+
+section.footer h4 {
+	color: #8cd233; 
+	margin: 5px; 
+	padding: 5px; 
+	width: 50%;} 
+
+section.footer p {
+	background-color: transparent; 
+	padding: 0px; 
+	margin:0px;
+	margin-left: 5px; 
+	padding-left: 15px;}
+
+section.footer a {
+	color: #fff; 
+	text-decoration: none;}
+
+section.footer a:hover {
+	color: #ece42d; 
+	text-decoration: underline;}
+
+div.foot {
+	width: 15%; 
+	text-align: left; } 
+
+div.foot.categories.one {
+	position: absolute; 
+	left: 15px;
+	bottom: 79px;}
+
+div.foot.categories.two {
+	position: absolute; 
+	left: 235px;
+	bottom: 77px;}
+
+div.foot.about{
+	position: absolute; 
+	left: 495px;
+	bottom: 78px;}
+
+div.foot.support{
+	position: absolute; 
+	right: 475px;
+	bottom: 40px;}
+
+div.foot.follow.us{
+	position: absolute;
+	right: 200px;
+	bottom: 115px;}
+
+div.foot.copy {
+	color: #ece42d;
+	position: absolute;
+	right: 15px;
+	bottom: 190px;}
+
+div.divider {
+	position: absolute;}
+
+div.divider.one {
+	left: 460px;
+	bottom: 20px;}
+
+div.divider.two {
+	left: 710px;
+	bottom: 20px;}
+
+div.divider.three {
+	right: 460px;
+	bottom: 20px;}
+
+div.divider.four {
+	right: 270px;
+	bottom: 20px;}
+
+
+
+
+
+
